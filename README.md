@@ -41,9 +41,4 @@
    git clone git@github.com:Sangeetha0822/TO-Do.git
 
 
-   ## Screenshots
-### Task List View
-![Task List View](./C:\Users\sange\OneDrive\Pictures\Screenshots")
-
-### Add New Task Form
-![Add Task Form](./images/add-task.png "Add Task Example")
+   
