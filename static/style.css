@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+    background-color: #fae6e6; /* Light purple background */
+    color: #2d3436; /* Dark grey for main text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+/* Form Styling */
+form fieldset {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque white */
+}
+
+form legend {
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    color: #6a5acd; /* Darker shade of purple for the legend */
+}
+
+.form-label {
+    color: #3d3d3d;
+}
+
+.form-control, .form-select {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.95rem;
+    background-color: #fafbfc; /* Light background for inputs */
+    color: #2d3436;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #6a5acd; /* Darker purple for buttons */
+    border-color: #6a5acd;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #483D8B; /* Darker shade on hover */
+}
+
+/* Table Styling */
+.table th {
+    background-color: #6a5acd; /* Purple header for tables */
+    color: #ffffff;
+    padding: 12px;
+}
+
+.table td {
+    background-color: #f8f9fa; /* Light grey for table cells */
+    color: #2d3436;
+    border-top: 1px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #eaf4fe; /* Light blue on hover */
+}
+
+/* Task Status Colors */
+.text-decoration-line-through {
+    color: #6c757d; /* Grey for completed tasks */
+}
+
+.update-status {
+    font-size: 0.85rem; /* Smaller font for status updates */
+}
+
+/* Sticky Headers */
+.table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #5ccd5a; /* Consistent header color */
+    z-index: 2;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduced padding on smaller screens */
+        max-width: calc(100% - 20px); /* Full width minus margins on mobile */
+    }
+    
+    .table-container {
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        margin-bottom: 20px; /* Space below table on mobile devices */
+    }
+}
