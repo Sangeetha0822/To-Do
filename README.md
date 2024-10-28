@@ -1,32 +1,43 @@
 # To-Do
 
-###Key Features and Overview of the Python Usage(app.py)
+## **Key Features and Overview of the Python Usage (app.py)**  
 
-**Framework and Tools: Built with Flask for web development and SQLAlchemy for database interactions.
+- **Framework and Tools:** Built with **Flask** for web development and **SQLAlchemy** for database interactions.  
+- **Database Configuration:** Uses a **PostgreSQL** database with a `TaskList` table containing fields:  
+  - `id` (primary key)  
+  - `description`  
+  - `priority`  
+  - `status` (default: 'Pending')  
 
-**Database Configuration: Uses a PostgreSQL database with a TaskList table containing fields: id, description, priority, and status.
+### **Task Management Features:**  
+- **CRUD Operations:**  
+  - **Create:** Add new tasks.  
+  - **Read:** Display tasks on the homepage.  
+  - **Update:** Edit task details.  
+  - **Delete:** Remove tasks from the list.  
 
-**Task Management Features: Supports CRUD operations:
+- **API for Task Status:**  
+  Provides a **JSON-based API** (`/update_status/<id>`) to update the status of tasks (e.g., mark as "Completed").  
 
-Create: Add new tasks.
-Read: Display tasks on the homepage.
-Update: Edit task details.
-Delete: Remove tasks from the list.
-API for Task Status: Provides a JSON-based API (/update_status/<id>) to update the status of tasks (e.g., mark as "Completed").
+### **Email Notifications:**  
+- Sends **email alerts** when a new task is added using Gmail's SMTP server.  
 
-**Email Notifications: Sends email alerts when a new task is added using Gmail's SMTP server.
+### **Flash Messages:**  
+- Implements **flash messaging** to notify users about actions like task addition, updates, or errors.  
 
-**Flash Messages: Implements flash messaging to notify users about actions like task addition, updates, or errors.
+### **Templates:**  
+- Uses **HTML templates** (`index.html` and `update.html`) to display and update tasks on the frontend.  
 
-**Templates: Uses HTML templates (index.html and update.html) for the frontend to display and update tasks.
+### **Configuration Settings:**  
+- **`SQLALCHEMY_DATABASE_URI`** connects to PostgreSQL.  
+- **`SECRET_KEY`** enables flash messaging support.  
 
-**Configuration Settings:
+### **Error Handling:**  
+- Uses `try-except` to handle errors in email sending and display appropriate feedback using flash messages.  
 
-SQLALCHEMY_DATABASE_URI connects to PostgreSQL.
-SECRET_KEY enables flash messaging support.
-Error Handling: Wraps the email sending operation with try-except to catch errors and provide feedback via flash messages.
+### **Running the Application:**  
+- Runs locally on **http://127.0.0.1:5000** with **debug mode enabled** for easier troubleshooting.  
 
-**Running the Application: Runs locally on http://127.0.0.1:5000 with debug mode enabled for easier troubleshooting.
 
 
 ## Features  
